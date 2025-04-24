@@ -9,6 +9,7 @@
       color: white;
       margin: 0;
       font-family: Arial, sans-serif;
+      cursor: url('https://static.wikitide.net/utgwiki/1/14/Runner.png'), auto;
     }
 
     .top-bar {
@@ -108,11 +109,10 @@
       color: rgba(255, 255, 255, 1);
     }
 
-    /* Bottom left link */
     .video-downloader {
       position: fixed;
       left: 20px;
-      bottom: 60px; /* Positioned above the contact bar */
+      bottom: 60px;
       font-size: 14px;
       color: rgba(255, 255, 255, 0.8);
       text-decoration: none;
@@ -126,7 +126,6 @@
       background-color: rgba(255, 255, 255, 0.3);
     }
 
-    /* Bottom black bar with hover contact */
     .contact-bar {
       position: fixed;
       bottom: 0;
@@ -143,10 +142,6 @@
       transition: color 0.3s ease;
     }
 
-    .contact-bar span:hover {
-      color: rgba(255, 255, 255, 0.8);
-    }
-
     .contact-bar .email {
       display: none;
     }
@@ -154,7 +149,6 @@
     .contact-bar:hover .email {
       display: inline;
     }
-
   </style>
 </head>
 <body>
@@ -169,13 +163,9 @@
 
   <h1>hey! welcome to the UTG gameplay sharing website.</h1>
 
-  <!-- Video Navigation -->
   <div class="video-container">
     <div class="video-wrapper">
-      <!-- Video iframe -->
       <iframe src="https://www.youtube.com/embed/lmlcj6C7oLc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
-      <!-- Navigation Arrows -->
       <div class="nav-arrows">
         <span id="prev" style="visibility: hidden;">←</span>
         <span id="next" style="visibility: hidden;">→</span>
@@ -183,10 +173,8 @@
     </div>
   </div>
 
-  <!-- Video Downloader Link -->
   <a href="https://cobalt.tools/" class="video-downloader" target="_blank">video downloader</a>
 
-  <!-- Contact Bar at the Bottom -->
   <div class="contact-bar">
     <span>hover to contact me</span>
     <span class="email"> utgfootage@gmail.com</span>
